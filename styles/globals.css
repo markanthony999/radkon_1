@@ -1,16 +1,81 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap'); */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100&display=swap');
+
+body {
+  background-color: rgb(75, 74, 74); 
+  /* background-image: url('/background_2.jpg');  */
+    background-repeat: no-repeat;
+  color: white;
+  line-height:1.5rem;
+  font-family: "Roboto Condensed";
+  font-size:20px;
+}
+h1 {
+  line-height:1.5rem;
+}
+ /* .container { 
+  border: 2px solid white;
+  padding:1.175rem;
+  margin-bottom: 2rem;
+  background:white;
+  color:black;
+  border-radius: 5px;
+} */
+
+button {
+  padding:.75rem;
+  font-size:16px;
+  border-radius:5px;
+}
 a {
-  color: inherit;
+  color: #f8f6f6;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+nav {
+  margin: 10px auto 80px;
+  padding: 15px 10px;
+  font-size:1.375rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  margin-left: 12px;
+  
+}
+
+nav .logo {
+  margin-right: auto;
+  background-color:white;
+  padding-left:1.175rem;
+  padding-right:1.175rem;
+  border-radius:5px;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  color: #777;
+  border-top: 1px solid #eaeaea;
+}
+
+.not-found {
+  text-align: center;
+}
+
+.not-found a {
+  color: #4979ff;
+  text-decoration: underline;
 }
