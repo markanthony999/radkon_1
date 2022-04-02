@@ -14,30 +14,34 @@ export default function Articles({ posts }) {
 	return (
 		<>
 			<Header />
+			<h1>Articles (links) </h1>
 			<div className={styles.container}>
-				<h1>Articles (links) </h1>
-				<ul>
-					<li>- CYBER CRIMINALS GOING AFTER SMALL BUSINESSES</li>
-					<li>- BENEFITS OF USING A MANAGED SERVICE PROVIDER</li>
-					<li> - WHEN IS THE RIGHT TIME TO UPGRADE YOUR COMPUTER FLEET?</li>
-					<li>
-						- TWO QUESTIONS TO ASK YOURSELF WHEN BUYING TECHNOLOGY FOR THE
-						CLASSROOM
-					</li>
-					<li>- FREE WINDOWS 10 UPGRADE DEADLINE (JULY 29, 2016)</li>
-					<li>- AFFORDABLE IT SUPPORT</li>
-				</ul>
-				{posts.map((post) => {
-					return (
-						<>
-							<a key={post.title} href="#">
-								<h3>{post.title}</h3>
-							</a>
-							{post.featuredImage}
-							<div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-						</>
-					)
-				})}
+				<div className={styles.child}>
+					<ul>
+						<li>- CYBER CRIMINALS GOING AFTER SMALL BUSINESSES</li>
+						<li>- BENEFITS OF USING A MANAGED SERVICE PROVIDER</li>
+						<li> - WHEN IS THE RIGHT TIME TO UPGRADE YOUR COMPUTER FLEET?</li>
+						<li>
+							- TWO QUESTIONS TO ASK YOURSELF WHEN BUYING TECHNOLOGY FOR THE
+							CLASSROOM
+						</li>
+						<li>- FREE WINDOWS 10 UPGRADE DEADLINE (JULY 29, 2016)</li>
+						<li>- AFFORDABLE IT SUPPORT</li>
+					</ul>
+				</div>
+				<div div className={styles.container}>
+					{posts.map((post) => {
+						return (
+							<div className={styles.child}>
+								<a key={post.title} href="#">
+									<h3>{post.title}</h3>
+								</a>
+								{post.featuredImage}
+								<div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+							</div>
+						)
+					})}
+				</div>
 			</div>
 		</>
 	)

@@ -7,6 +7,7 @@ function Header() {
 			<Navbar />
 			<style jsx>{`
 				.container {
+					background-color: #cccccc;
 					background-image: url('/imgs/satellite.jpg');
 					background-position: center;
 					background-size: cover;

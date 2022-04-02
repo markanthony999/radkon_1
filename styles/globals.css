@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100&display=swap');
 
 body {
-	background-color: white;
+	/* background-color: white; */
 	color: #000000;
 	line-height: 1.5rem;
 	font-family: 'Roboto Condensed';
@@ -16,12 +16,14 @@ body {
 
 .container {
 	padding: 0 2rem;
-
+	padding-bottom: 1rem;
 	margin: auto;
 }
 
 h1 {
-	font-size: 1.5rem;
+	font-size: 2.75rem;
+	padding-top: 1rem;
+	margin: auto;
 }
 h2 {
 	font-size: 1.375rem;
@@ -60,4 +62,7 @@ a {
 .not-found a {
 	color: #4979ff;
 	text-decoration: underline;
+}
+li {
+	list-style: none;
 }

@@ -38,8 +38,8 @@ export default function Businesses() {
 						schedule. This will ensure that your files are backed up in a timely
 						manner.{' '}
 					</p>
-				</div>
-				{/* <h1>PREMIUM SERVICES</h1>
+
+					{/* <h1>PREMIUM SERVICES</h1>
 				<h1>IT Support 24/7 IT SUPPORT - MANAGED SERVICES</h1>
 				<p>
 					{' '}
@@ -69,9 +69,11 @@ export default function Businesses() {
 					capabilities, but we also offer on site support. For more information
 					and for pricing please call our support team at +1 877 224 6601.{' '}
 				</p> */}
-
-				<div className="AccordionContainer">
+				</div>
+				<div className="container">
 					<h1>WHAT CAN RADKON DO FOR YOU</h1>
+				</div>
+				<div className="AccordionContainer">
 					<details closed>
 						<summary>24/7 IT SUPPORT - MANAGED SERVICES</summary>
 						<p>
@@ -206,11 +208,13 @@ export default function Businesses() {
 						{`
 							.AccordionContainer {
 								width: 80vw;
+								margin-top: 2rem;
 								margin: auto;
 								margin-bottom: 5rem;
-								border: 2px solid #414d4d;
+								border: 2px solid #cccccc;
 								border-radius: 5px;
-								padding: 1rem;
+								padding: 0.5rem;
+								padding-bottom: 1rem;
 								font: 'Arial';
 							}
 							details {
@@ -221,9 +225,9 @@ export default function Businesses() {
 								cursor: pointer;
 								margin-bottom: 1rem;
 							}
-							details li {
-								list-style: none;
-							}
+							// details li {
+							// 	list-style: none;
+							// }
 							details[open] {
 								max-height: 99rem;
 								animation: sweep 2.5s ease-in-out;

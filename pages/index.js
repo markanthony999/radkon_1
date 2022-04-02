@@ -9,8 +9,11 @@ export default function Home() {
 		<>
 			<Header />
 			<div className={styles.container}>
+				<div className={styles.container}>
+					<h1>HEADLINE</h1>
+				</div>
 				<div className={styles.child}>
-					<h1>ARE YOUR EMPLOYEES' CREDENTIALS ON THE DARK WEB?</h1>
+					<h2>ARE YOUR EMPLOYEES' CREDENTIALS ON THE DARK WEB?</h2>
 					<h2>WE NAVIGATE THE DARK WEB SO YOU DON'T HAVE TO!</h2>
 
 					<p>
@@ -35,6 +38,9 @@ export default function Home() {
 						height={500}
 					/>
 				</div>
+				<div className={styles.container}>
+					<h1>HEADLINE</h1>
+				</div>
 				<div className={styles.child}>
 					<Image
 						src="/imgs/img1.jpg"
@@ -45,7 +51,7 @@ export default function Home() {
 				</div>
 
 				<div className={styles.child}>
-					<h1>WHY SHOULD I CHOOSE AN MSP FOR MY IT NEEDS?</h1>
+					<h2>WHY SHOULD I CHOOSE AN MSP FOR MY IT NEEDS?</h2>
 					<h2>BENEFITS OF USING A MANAGED SERVICE PROVIDER</h2>
 
 					<p>
@@ -63,9 +69,11 @@ export default function Home() {
 						</a>
 					</Link>
 				</div>
-
+				<div className={styles.container}>
+					<h1>HEADLINE</h1>
+				</div>
 				<div className={styles.child}>
-					<h1>CYBER CRIMINALS GOING AFTER SMALL BUSINESSES...</h1>
+					<h2>CYBER CRIMINALS GOING AFTER SMALL BUSINESSES...</h2>
 					<h2>CAN YOUR BUSINESS SURVIVE AN ATTACK?</h2>
 					<h2>ARE YOU PREPARED?</h2>
 
